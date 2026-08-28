@@ -85,7 +85,7 @@ detailStyles.textContent=`
 document.head.appendChild(detailStyles);
 
 function removeHeadingDots(){
-  document.querySelectorAll('h1,h2,h4,.pillar-label').forEach(el=>{
+  document.querySelectorAll('h1,h2,h3,h4,h5,.lead,.section-heading>p,.pillar-label,.philosophy-steps span,.examples span').forEach(el=>{
     el.textContent=el.textContent.trim().replace(/[.!?…]+$/u,'');
   });
 }
